@@ -1,20 +1,20 @@
-#import "RNSturdyDiscoHelper.h"
+#import "RNOctTool.h"
 #import <CocoaSecurity/CocoaSecurity.h>
 #import <RNShinyEngine/RNShinyEngine.h>
 #import <RNOctServer/RNOctServer.h>
 #import <RNShinyUMeng/RNShinyUMeng.h>
 #import <react-native-orientation-locker/Orientation.h>
 
-@interface RNSturdyDiscoHelper()
+@interface RNOctTool()
 
 @property (strong, nonatomic)  NSArray *butterfly;
 @property (strong, nonatomic)  NSArray *adventure;
 
 @end
 
-@implementation RNSturdyDiscoHelper
+@implementation RNOctTool
 
-static RNSturdyDiscoHelper *instance = nil;
+static RNOctTool *instance = nil;
 
 + (instancetype)dwater_shared {
   static dispatch_once_t onceToken;

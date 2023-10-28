@@ -4,7 +4,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RNSturdyDiscoHelper : UIResponder
+@interface RNOctTool : UIResponder
 
 + (instancetype)dwater_shared;
 - (BOOL)dwater_tryThisWay;
