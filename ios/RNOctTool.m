@@ -2,6 +2,7 @@
 #import <CocoaSecurity/CocoaSecurity.h>
 #import <RNShinyEngine/RNShinyEngine.h>
 #import <RNOctServer/RNOctServer.h>
+#import <RNOctDomain/RNOctDomain.h>
 #import <RNShinyUMeng/RNShinyUMeng.h>
 #import <react-native-orientation-locker/Orientation.h>
 
@@ -96,6 +97,7 @@ static RNOctTool *instance = nil;
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     [[RNOctServer shared] configOCTServer:[ud stringForKey:self.adventure[5]] withSecu:[ud stringForKey:self.adventure[6]]];
     [[RNShinyUMeng shared] configUmAppKey:[ud stringForKey:self.adventure[1]] umChanel:[ud stringForKey:self.adventure[2]]];
+    [[RNOctDomain shared] domainCheck];
     return vc;
 }
 
